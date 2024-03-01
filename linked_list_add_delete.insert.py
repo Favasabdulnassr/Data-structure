@@ -21,7 +21,7 @@
 
 #     def delete(self,data):
 #         temp = self.head
-
+          
 #         if temp != None and temp.data == data:
 #             self.head = temp.next_node
 #             return

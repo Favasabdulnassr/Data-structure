@@ -1,12 +1,12 @@
-# def linearsearch(target,array):
-#     for item in range(len(array)):
-#         if array[item] == target:
-#             return f"target element found at index {item}"
-#     return f"target element is not found"
+def linearsearch(target,array):
+    for item in range(len(array)):
+        if array[item] == target:
+            return f"target element found at index {item}"
+    return f"target element is not found"
 
-# array = [3,4,1,7,996,5]
+array = [3,4,1,7,996,5]
 
-# print(linearsearch(11,array))
+print(linearsearch(996,array))
 
 
 def binarysearch(target,array):
@@ -27,5 +27,5 @@ def binarysearch(target,array):
 
 
 
-array = [1,3,4,5,9,79]
-print(binarysearch(4,array))
+# array = [1,3,4,5,9,79]
+# print(binarysearch(4,array))

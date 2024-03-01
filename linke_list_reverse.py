@@ -32,7 +32,7 @@ class Linkedlist:
         while current_node:
             next_node = current_node.next_node
             current_node.next_node = prev_node
-           
+            
             prev_node = current_node
             current_node = next_node
 
