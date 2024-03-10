@@ -54,4 +54,11 @@ class Linkelist:
             current_node = current_node.next_node  
         return  
     
-list = linkelist          
+list = Linkelist()
+list.append(1)
+list.append(2)
+list.append(3)
+list.append(4)
+list.add_end(5)
+list.removebeggining()
+list.display()
