@@ -16,10 +16,11 @@ class Hashtable:
         else:
             for i , (existing_key,_) in enumerate(self.table[index]):
                 if existing_key == key:
-                    self.table[index][i] = (key,value)
+                    self.table[index][i] = value
                     return
                 
             self.table[index].append((key,value))
+            self.length += 1
 
     def search(self,key):     
         index = self.hash_fun(key)

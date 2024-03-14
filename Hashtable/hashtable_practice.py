@@ -34,7 +34,7 @@ class Hashtable:
         index = self.hash_fun(key)
 
         if self.table[index]:
-            for i ,(existing_key,value) in enumerate(self.table):
+            for i ,(existing_key,value) in enumerate(self.table[index]):
                 if existing_key == key:
                     del self.table[index][i]
                     return 
@@ -47,7 +47,7 @@ class Hashtable:
             if table:
                 for (i,j) in table:
                     print(i,j)
-                    
+
 
 
         
