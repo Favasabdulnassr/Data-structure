@@ -1,5 +1,4 @@
 array = [30,6,9,2,15,3,1,6,9]
-array = [30,6,9,2,15,3,1,6,9]
 
 def Bubblesort1(arr):
     n = len(arr)
