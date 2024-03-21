@@ -55,17 +55,17 @@
 #removing unwanted space in strings
 
 
-def removeUnwantedSpace(string):
-    prev = ''
-    new = ''
-    for char in string:
-        if char == ' ' and  prev == ' ':
-            continue
-        new += char
-        prev = char
-    print(new)    
+# def removeUnwantedSpace(string):
+#     prev = ''
+#     new = ''
+#     for char in string:
+#         if char == ' ' and  prev == ' ':
+#             continue
+#         new += char
+#         prev = char
+#     print(new)    
 
 
 
-string = 'Hello           how                are             you'
-removeUnwantedSpace(string)    
+# string = 'Hello           how                are             you'
+# removeUnwantedSpace(string)    
