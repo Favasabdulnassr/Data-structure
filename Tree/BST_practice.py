@@ -95,7 +95,11 @@ class Tree:
         if value < node.key:
             return self.closest_value(node.left,value)
         else:
-            return self.closest_value(node.right,value)   
+            return self.closest_value(node.right,value)  
+       
+         
+        
+
 
 
         
