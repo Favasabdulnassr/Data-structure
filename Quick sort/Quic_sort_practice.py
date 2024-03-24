@@ -12,3 +12,8 @@ def Quicksort(arr):
     
 
 print(Quicksort(array))
+                                                                                              
+
+
+
+                                                                                              
