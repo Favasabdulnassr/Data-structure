@@ -46,14 +46,14 @@
 #     else:
 #         return fibonacci(n-1) + fibonacci(n-2)
     
-# print(fibonacci(7))    
+# print(fibonacci(4))    
     
 
 
 
 # def fibonacci(value,a=0,b=1):
 #     if value >= 0:
-#         print(a,end='  ')
+#         print(a,end=' ')
 #         return fibonacci(value-1,b,a+b)
 #     else:
 #         return
@@ -114,19 +114,19 @@
 # is_palindrome(s)
 
 
-# def flattened_list(nested_list):
-#     flat_list = []
+def flattened_list(nested_list):
+    flat_list = []
 
-#     for i in nested_list:
-#         if isinstance(i,list ):
-#             flat_list.extend(flattened_list(i))
-#         else:
-#             flat_list.append(i)
-#     return flat_list
+    for i in nested_list:
+        if isinstance(i,list ):
+            flat_list.extend(flattened_list(i))
+        else:
+            flat_list.append(i)
+    return flat_list
  
 
-# nested_list = [1, [2, 3, [4, 5]], 6, [7, 8, [9, 10]]]
-# print(flattened_list(nested_list))
+nested_list = [1, [2, 3, [4, 5]], 6, [7, 8, [9, 10]]]
+print(flattened_list(nested_list))
 
 
 

@@ -6,9 +6,9 @@ def merge_sort(arr):
         return arr
     
     mid = len(arr)//2
-    left_arr = arr[:mid]
+    left_arr = arr[:mid]  
     right_arr = arr[mid:]
-
+                            
     left_merge = merge_sort(left_arr)
     right_merge = merge_sort(right_arr)
 

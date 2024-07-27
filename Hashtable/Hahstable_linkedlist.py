@@ -46,6 +46,8 @@ class Hashtable:
 
         raise KeyError(key)  
     
+  
+    
     def remove(self,key):
         index = self._hash(key)
         prev = None
@@ -100,7 +102,9 @@ hashtable.insert('sulaiman',8)
 
 hashtable.display()
 
+
 print(hashtable._length())
+
 
 
     

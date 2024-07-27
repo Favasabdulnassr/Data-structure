@@ -9,7 +9,7 @@ class Hashtable:
 
     def insert(self,key,value):
         index = self.hash_fun(key)
-
+    
         if self.table[index] is None:
             self.table[index] = [(key,value)]
             self.size += 1

@@ -32,7 +32,7 @@ class MaxHeap:
 
         if right_child < len(self.heap) and self.heap[right_child] > self.heap[largest]:
             largest = right_child
-
+ 
         if largest != index:
             self.swap(largest,index) 
             self.heap_down(largest)   

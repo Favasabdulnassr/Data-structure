@@ -1,4 +1,4 @@
-array = [30,6,9,2,15,3,1,6,9]
+array = [30,6,9,2,15,3,1,6,9,40]
 
 def merge_sort(arr):
     if len(arr) > 1:
@@ -18,11 +18,15 @@ def merge_sort(arr):
                 j += 1 
             k += 1    
 
-        if i < len(left_arr):
+        while i < len(left_arr):
             arr[k] = left_arr[i]
+            i += 1
+            k += 1
 
-        elif j < len(right_arr):
+        while j < len(right_arr):
             arr[k]  = right_arr[j] 
+            j += 1
+            k += 1
 
 
     return arr  

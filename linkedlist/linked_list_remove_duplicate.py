@@ -35,6 +35,8 @@ class Linkedlist:
                 current = current.next_node
         return
 
+
+
 list = Linkedlist ()
 list.append(1)
 list.append(2)

@@ -30,4 +30,4 @@ class Hashtable:
             new_node = Node(key,value)   
             new_node.next = self.table[index]
             self.table[index] = new_node         
-            self.lenght += 1
+            self.length += 1

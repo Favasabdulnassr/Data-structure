@@ -69,3 +69,51 @@
 
 # string = 'Hello           how                are             you'
 # removeUnwantedSpace(string)    
+
+
+
+'''capitalize strings in different method '''
+
+# s = "hi hello world"
+# capitalized_s = s.capitalize()
+# print(capitalized_s)  # Output: "Hi hello world"
+
+
+
+
+# s = "hi hello world"
+# title_s = s.title()
+# print(title_s)  # Output: "Hi Hello World"
+
+
+
+
+# s = "hi hello world"
+# upper_s = s.upper()
+# print(upper_s)  # Output: "HI HELLO WORLD"
+
+
+
+# s = "hi hello world"
+# capitalized_s = ' '.join(word.capitalize() for word in s.split())
+# print(capitalized_s)  # Output: "Hi Hello World"
+
+
+
+
+# s = "hi hello world"
+
+# new_s = ''
+# flag = True
+
+# for i in s:
+#     if flag and i.isalpha():
+#         new_s += i.upper()
+#         flag = False
+#     else:
+#         new_s += i
+
+#     if i == ' ':
+#         flag = True
+
+# print(new_s)
