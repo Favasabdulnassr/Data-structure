@@ -99,7 +99,23 @@ class BinarySearchTree:
             self.in_order_traversal_fun(node.right)
 
         
-            
+    def level_order_traversal(self):
+        if not self.root:
+            return
+
+        queue = [self.root]
+
+        while queue:
+            current_node = queue.pop(0)
+            print(current_node.key, end=' ')
+
+            if current_node.left:
+                queue.append(current_node.left)
+
+            if current_node.right:
+                queue.append(current_node.right)
+
+
 
 
 
@@ -119,6 +135,8 @@ bst.insert(34)
 
 print(bst.contains(3))
 bst.pre_order_traversal()
+print()
+bst.level_order_traversal()
 
 
             
