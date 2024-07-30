@@ -48,9 +48,9 @@ class MinHeap:
             self.heap.pop()
             return
         self.swap(0,len(self.heap)-1)
-        self.heap.pop()
+        removed_value = self.heap.pop()
         self.heapify_down(0)
-        return 
+        return removed_value
 
     # def remove_value(self,value):
     #     if value not in  self.heap:
@@ -71,7 +71,6 @@ min_heap = MinHeap()
 min_heap.build_heap([3,5,6,8,93,2,66,9])
 min_heap.remove()
 
-min_heap.remove_value(9)
 
 
 min_heap.insert(10)

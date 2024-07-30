@@ -44,7 +44,29 @@ class Trie:
             self.prefix_word_searcher(child_node,prefix+char,new)
       
 
- 
+    def delete_word(self,word):
+        def _delete(node,word,depth):
+            if not node:
+                return False
+            
+            if depth == len(word):
+                if node.end:
+                    node.end = False
+                return len(node.child) == 0    
+            
+            char = word[depth]
+            if char in node.child:
+                should_delete_child = _delete(node.child[char],word,depth+1)
+
+                if should_delete_child:
+                    del node.child[char]
+
+                    return len(node.child) == 0 and not node.end
+
+            return False
+
+
+        _delete(self.root,word,0)
         
     
 trie = Trie()
@@ -52,7 +74,7 @@ trie = Trie()
 name = ['messi','romero','depaul','ronaldo']   
 for i in name:
     trie.insert(i)
-
+trie.delete_word('romero')
 print(trie.prefix_search('') )
 
 

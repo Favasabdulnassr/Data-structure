@@ -70,7 +70,6 @@ class MaxHeap:
 max_heap = MaxHeap()
 
 max_heap.build_heap([3,5,6,8,93,2,66,9])
-max_heap.remove_value(6)
 
 max_heap.insert(10)
 print(max_heap.heap)
